@@ -30,4 +30,9 @@ Special purpose procedure for evaluating and producing satisfying values for low
 
 **Methodology**
 
-PDDLStream uses *streams* as an interface for incorporating sampling procedures in PDDL. Streams have both a *procedural* and *declarative* component. The *procedure* component genreate a possibly infinite sequence of output values from input values. The *declarative* component specifies the facts that these input and output values satisfy. PDDLStream is able to model domains with infinitely-many action instances.n order to reduce a potentially infinitely-large PDDLStream problem to a sequence of finite PDDL problems. The paper introduces the *level* of a fact, a level relates to the number of stream evaluations that are required to certify a fact.
+PDDLStream uses *streams* as an interface for incorporating sampling procedures in PDDL. Streams have both a *procedural* and *declarative* component. The *procedure* component genreate a possibly infinite sequence of output values from input values. The *declarative* component specifies the facts that these input and output values satisfy. PDDLStream is able to model domains with infinitely-many action instances. In order to reduce a potentially infinitely-large PDDLStream problem to a sequence of finite PDDL problems. The paper introduces the *level* of a fact, a level relates to the number of stream evaluations that are required to certify a fact.
+
+- What is PDDLStream problems and how is it described?
+
+In order to enable easy use for AI practitioners, PDDLStream adheres to the PDDL standard when possible and adapts PDDL style and syntax when describing streams. The declarative components of PDDLStream are still described in PDDL. Actions and derived predicates are listed using a standard domain.pddl text file. The input parameters (:inp), domain facts (:dom), output parameters (:out), and certified facts (:cert) of each stream are specified in a stream.pddl text file.
+
