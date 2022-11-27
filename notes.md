@@ -36,3 +36,9 @@ PDDLStream uses *streams* as an interface for incorporating sampling procedures 
 
 In order to enable easy use for AI practitioners, PDDLStream adheres to the PDDL standard when possible and adapts PDDL style and syntax when describing streams. The declarative components of PDDLStream are still described in PDDL. Actions and derived predicates are listed using a standard domain.pddl text file. The input parameters (:inp), domain facts (:dom), output parameters (:out), and certified facts (:cert) of each stream are specified in a stream.pddl text file.
 
+- Limitations
+
+To ensure PDDLStream is Turing-recognizable, we require that stream-certified predicates are never negated within action preconditions. The set of streams S augments the initial state I, recursively defining a potentially infinite set of facts I ∗ that hold initially and cannot be changed.
+
+
+
