@@ -39,10 +39,10 @@ Procedural and declarative component. PDDLStream uses *streams* as an interface 
 Primage:
 
 > The *preimage* of a consistent plan $\pi$ is the set of facts that must hold to make $\pi$ executable.
-$$
-\text{PREIMAGE($\pi$)} = \bigcup\limits_{i=1}^k (pre(a_i(x_i)) - \bigcup\limits_{j<i}eff(a-j(x_j))).
-$$
 
+$$\text{PREIMAGE}(\pi) = \bigcup_{i=1}^k \bigg(\text{pre}(a_i(\bar{x}_i)) - \bigcup_{j-i} \text{eff}(a_j(\bar{x}_j))\bigg)$$
+
+$$U_{1<2}$$
 
 **Methodology**
 
