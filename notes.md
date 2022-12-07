@@ -1,4 +1,4 @@
-#### [Sequence-Based Plan Feasibility Prediction for Efficient Task and Motion Planning]((https://arxiv.org/pdf/2211.01576.pdf))
+#### [Sequence-Based Plan Feasibility Prediction for Efficient Task and Motion Planning](https://arxiv.org/pdf/2211.01576.pdf)
 
 **Achivements**
 
@@ -28,9 +28,23 @@ Extend PDDL to support a generic, declarative specification for sampling feasibl
 
 Special purpose procedure for evaluating and producing satisfying values for low-level constraints are unknown. TAMP for complex robot (e.g. a 11 DOF arm) is time consuming. Exising methods (i.e. numerical planning) cannot handle enormous collision constraints or 3D articulated robots. Semantic attachments limits the applicability to domains that are prediscretized and finite. However, in real world we don't have access to the static facts in a discretized state space. 
 
-**Methodology**
+**Important Concepts**
 
-PDDLStream uses *streams* as an interface for incorporating sampling procedures in PDDL. Streams have both a *procedural* and *declarative* component. The *procedure* component genreate a possibly infinite sequence of output values from input values. The *declarative* component specifies the facts that these input and output values satisfy. PDDLStream is able to model domains with infinitely-many action instances. In order to reduce a potentially infinitely-large PDDLStream problem to a sequence of finite PDDL problems. The paper introduces the *level* of a fact, a level relates to the number of stream evaluations that are required to certify a fact.
+Procedural and declarative component. PDDLStream uses *streams* as an interface for incorporating sampling procedures in PDDL. Streams have both a *procedural* and *declarative* component. 
+
+> The *procedure* component genreate a possibly infinite sequence of output values from input values. In detail, is is a conditional generator, conidtional Generator* a function from input values to a possibly infinite sequence of output values. Conditional generators construct new values that depend on existing values (e.g. robot configurations that satisfy a kinematic constraint)
+
+> The *declarative* component specifies the **facts** that these input and output values satisfy. PDDLStream is able to model domains with infinitely-many action instances. In order to reduce a potentially infinitely-large PDDLStream problem to a sequence of finite PDDL problems. The paper introduces the *level* of a fact, a level relates to the number of stream evaluations that are required to certify a fact.
+
+Primage:
+
+> The *preimage* of a consistent plan $\pi$ is the set of facts that must hold to make $\pi$ executable.
+$$
+\text{PREIMAGE($\pi$)} = \bigcup\limits_{i=1}^k (pre(a_i(x_i)) - \bigcup\limits_{j<i}eff(a-j(x_j))).
+$$
+
+
+**Methodology**
 
 - What is PDDLStream problems and how is it described?
 
@@ -38,7 +52,6 @@ In order to enable easy use for AI practitioners, PDDLStream adheres to the PDDL
 
 - Limitations
 
-To ensure PDDLStream is Turing-recognizable, we require that stream-certified predicates are never negated within action preconditions. The set of streams S augments the initial state I, recursively defining a potentially infinite set of facts I ∗ that hold initially and cannot be changed.
-
+To ensure PDDLStream is Turing-recognizable, we require that stream-certified predicates are never negated within action preconditions. The set of streams S augments the initial state I, recursively defining a potentially infinite set of facts that hold initially and cannot be changed.
 
 
