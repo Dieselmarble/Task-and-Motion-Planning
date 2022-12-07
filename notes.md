@@ -40,9 +40,7 @@ Primage:
 
 > The *preimage* of a consistent plan $\pi$ is the set of facts that must hold to make $\pi$ executable.
 
-$$\text{PREIMAGE}(\pi) = \bigcup_{i=1}^k \bigg(\text{pre}(a_i(\bar{x}_i)) - \bigcup_{j-i} \text{eff}(a_j(\bar{x}_j))\bigg)$$
-
-$$U_{1<2}$$
+$$\text{PREIMAGE}(\pi) = \bigcup_{i=1}^k \bigg( pre(a_i(x_i)) - \bigcup_{j< i} eff(a_j(x_j)) \bigg)$
 
 **Methodology**
 
