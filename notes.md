@@ -52,4 +52,40 @@ In order to enable easy use for AI practitioners, PDDLStream adheres to the PDDL
 
 To ensure PDDLStream is Turing-recognizable, we require that stream-certified predicates are never negated within action preconditions. The set of streams S augments the initial state I, recursively defining a potentially infinite set of facts that hold initially and cannot be changed.
 
+- Domain files declares actions
+- Stream files declares stream inputs, outputs, and certified facts
+- Domain facts - static facts declaring legal inputs 
+- Certified facts - static facts that all outputs satisfy with their corresponding inputs
+- PDDLStream planners decide which streams to use
+
+> Incremental algorithm
+The *incremental* algorithm enumberates $L*$ by iteratively increasing the maximum level $l$. For each level, the subroutine APPLY-STREAMS instantiates and evaluates all stream instances $s(\bar{x})$ at level $k \leql$ and adds any new procedure that is used to generate output objects when evaluating each stream instances
+
+The incremental algorithm eagerly and blindly evaluates all stream instances, producing many facts that are irrelevant to the task. 
+
+> Optimistic algorithm
+The optimistic algorithm lazily explore candidate plans before checking their validity. Optimistic objects represent hypothetical stream outputs before evaluating actual stream outputs.
+
+> Binding algorithm
+The bindng algorithm propagate stream outputs that are inputs to subsequent streams to evaluate more of the stream plan at once. 
+
+> Adaptive algorithm
+The adaptive algorithm balcances the time spent in search verseus process streams.
+
+### Backward-Forward Search for Manipulation Planning
+
+It present the hybrid backward-forward (HBF) planning algorithm that uses a backward identification of constraints to direct the sampling of the infinite action space in a forward search from the initial state towards a goal configuration.
+
+**Motivation**
+Hybrid planning problems have been formalized and addressed in the robotics literature as multi-modal planning problems. But former approaches have relatively weak guidance from the goal. As the dimensionality of the domain increases, it becomes increasingly difficult for a forward-search strategy to sample effectively from the infinite space of possible actions.
+
+**Methodology**
+HBF solves the exact planning problem by strongly focusing the sampling of actions toward the goal. It uses backward search in a simplifies problem space to generate sets of actions that are useful: these useful actions are components of successful plans in the simplified domain and might plausibly be contained in a plan to reach the goal in the actual domain.
+
+> Forward-search
+Maintains completeness with infinite action spaces and because attempts to find a path of optimal length. The search enforces hill-climbing, by remembering the minimum heuristic value $h_min$ seen so far. Whenever a state is reached with a lower heuristic value, the entire queue is popped, leaving only the initial state (in case this branch of the tree is a dead-end) and the current state on the queue. If the queue has not been reset, it adds the node that it just popped off back to the end of the queue.
+
+**Concepts**
+*Manipulation* plannig whose objective is for robot to operate on objects in the world.
+*Multi-modal planning* plans for systems with multiple modes, representing different constrant sub-mannifolds of the configuration space.
 
