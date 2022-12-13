@@ -23,6 +23,7 @@ Notes in Robot Task and Motion Planning
 #### Books
 - [Automated Planning and Acting, Malik Ghallab, Dana Nau and Paolo Traverso](https://projects.laas.fr/planning/)
 - [Automated Planning, Dana Nau's lecture slides](https://www.cs.umd.edu/~nau/planning/slides/)
+- [Artificial Intelligence: A Modern Approach (3rd edition)](https://zoo.cs.yale.edu/classes/cs470/materials/aima2010.pdf)
 
 #### Slices
 - [Granplan](https://pages.mtu.edu/~nilufer/classes/cs5811/2012-fall/lecture-slides/cs5811-ch10b-graphplan.pdf)
