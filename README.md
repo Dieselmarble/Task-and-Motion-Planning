@@ -28,5 +28,5 @@ Notes in Robot Task and Motion Planning
 
 #### Slices
 - [Granplan](https://pages.mtu.edu/~nilufer/classes/cs5811/2012-fall/lecture-slides/cs5811-ch10b-graphplan.pdf)
-- [Plan-Space Planning](http://www.dia.fi.upm.es/~ocorcho/Asignaturas/ModelosRazonamiento/PresentacionesClases/planning05.pdf）
+- [Plan Space Planning](http://www.dia.fi.upm.es/~ocorcho/Asignaturas/ModelosRazonamiento/PresentacionesClases/planning05.pdf）
 - [Task and Motion Planning (TAMP)](https://courses.cs.washington.edu/courses/cse571/22sp/slides/15-tamp.pdf)
