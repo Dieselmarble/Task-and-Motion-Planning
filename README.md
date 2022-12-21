@@ -7,6 +7,7 @@ Notes in Robot Task and Motion Planning
 - [Planning at KCL](https://nms.kcl.ac.uk/planning/index.html)
 - [Getting Started with PDDL](https://fareskalaboud.github.io/LearnPDDL/)
 - [A collection of tools for working with planning domains](http://planning.domains/)
+- [AAAI 2022 Tutorial on AI Planning: Theory and Practice](https://aiplanning-tutorial.github.io/)
 
 #### Github Repositories
 - [PDDL examples](https://github.com/yarox/pddl-examples)
