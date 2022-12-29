@@ -26,10 +26,12 @@ Extend PDDL to support a generic, declarative specification for sampling feasibl
 
 **Motivation**
 
-Special purpose procedure for evaluating and producing satisfying values for low-level constraints are unknown. TAMP for complex robot (e.g. a 11 DOF arm) is time consuming. Exising methods (i.e. numerical planning) cannot handle enormous collision constraints or 3D articulated robots. Semantic attachments limits the applicability to domains that are prediscretized and finite. However, in real world we don't have access to the static facts in a discretized state space. 
+Special purpose procedure for evaluating and producing satisfying values for low-level constraints are unknown. TAMP for complex robot (e.g. a 11 DOF arm) is time consuming. Exising methods (i.e. numerical planning) cannot handle enormous collision constraints or 3D articulated robots. Semantic attachments limits the applicability to domains that are prediscretized and finite. However, in real world we don't have access to the static facts in a discretized state space. Previous approach assumes finte action space (numberical planning, semantic attachments), application-specific problem description (TAMP interface) and brutal search (multi-modal motion planning), PDDLStream on the other hand, is a general purpopse and flexible TAMP framework.
 
 **Important Concepts**
 
+> Streams (specification of sampling procedure) allows us encode domains with infinite many actions.
+ 
 Procedural and declarative component. PDDLStream uses *streams* as an interface for incorporating sampling procedures in PDDL. Streams have both a *procedural* and *declarative* component. 
 
 > The *procedure* component genreate a possibly infinite sequence of output values from input values. In detail, is is a conditional generator, conidtional Generator* a function from input values to a possibly infinite sequence of output values. Conditional generators construct new values that depend on existing values (e.g. robot configurations that satisfy a kinematic constraint)
