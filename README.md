@@ -31,6 +31,6 @@ Notes in Robot Task and Motion Planning
 - [Granplan](https://pages.mtu.edu/~nilufer/classes/cs5811/2012-fall/lecture-slides/cs5811-ch10b-graphplan.pdf)
 - [Plan Space Planning](http://www.dia.fi.upm.es/~ocorcho/Asignaturas/ModelosRazonamiento/PresentacionesClases/planning05.pdf)
 - [Task and Motion Planning (TAMP)](https://courses.cs.washington.edu/courses/cse571/22sp/slides/15-tamp.pdf)
-
+- [Expansive Configuration Space](https://www.ccs.neu.edu/home/rplatt/cs5335_2015/slides/05-expansive.pdf)
 
 Active Learning of Abstract Plan Feasibility
