@@ -34,3 +34,6 @@ Notes in Robot Task and Motion Planning
 - [Expansive Configuration Space](https://www.ccs.neu.edu/home/rplatt/cs5335_2015/slides/05-expansive.pdf)
 
 Active Learning of Abstract Plan Feasibility
+
+### Inegrated Planers
+- [OpenRAVE](https://github.com/rdiankov/openrave)
