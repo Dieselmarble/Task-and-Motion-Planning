@@ -37,3 +37,6 @@ Active Learning of Abstract Plan Feasibility
 
 ### Inegrated Planers
 - [OpenRAVE](https://github.com/rdiankov/openrave)
+
+### PDDL Parser
+- [tarski](https://github.com/aig-upf/tarski)
