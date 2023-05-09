@@ -41,3 +41,6 @@ Active Learning of Abstract Plan Feasibility
 ### PDDL Parser
 - [tarski](https://github.com/aig-upf/tarski)
 - [lifted-pddl](https://github.com/AI-Planning/lifted-pddl/tree/main)
+
+### Assembly Datasets
+- [Lego](https://trevorsandy.github.io/lpub3d/)
