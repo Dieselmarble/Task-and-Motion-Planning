@@ -44,3 +44,6 @@ Active Learning of Abstract Plan Feasibility
 
 ### Assembly Datasets
 - [Lego](https://trevorsandy.github.io/lpub3d/)
+
+### Object Tracking
+- [CenterTrack](https://github.com/xingyizhou/CenterTrack)
