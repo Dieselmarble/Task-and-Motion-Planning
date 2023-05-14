@@ -48,3 +48,6 @@ Active Learning of Abstract Plan Feasibility
 - [CATER](https://rohitgirdhar.github.io/CATER/)
 ### Object Tracking
 - [CenterTrack](https://github.com/xingyizhou/CenterTrack)
+
+### Talks
+- [MIT Robotics - Tomás Lozano-Pérez - Generalization in Planning and Learning for Robotic Manipulation](https://www.youtube.com/watch?v=k8Zh7ColEbw&list=PLVTmH-n8jvEHShFFySYzpc8KtnXzE0Hi9&index=1)
